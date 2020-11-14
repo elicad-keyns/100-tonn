@@ -27,11 +27,4 @@ $(document).ready(function() { // Ждём загрузки страницы
 		offset = i * width;
 		$(".slider .slides").css("transform","translate3d(-"+offset+"px, 0px, 0px)"); // Смещаем блок со слайдами к следующему
 	});
-
-	function asl(){
-		var offset = i * width;
-		console.log('sys');
-		setTimeout(1000);
-	}
-	asl();
 });
