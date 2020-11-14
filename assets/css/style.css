@@ -1,1 +1,80 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.container {
+  width: 1250px;
+  margin: 0 auto;
+}
+
+.container iframe {
+  border: 2px solid #1c3f95;
+}
+
+.container .first .content {
+  background: url(../img/first-bg-block.jpg) no-repeat;
+  background-position-x: right;
+  position: absolute;
+  width: 1270px;
+  height: 548px;
+}
+
+.container .first .content p {
+  width: 470px;
+  font: normal 22px 'Arial';
+  color: #4d4d4f;
+  position: relative;
+  margin-top: 50px;
+}
+
+.container .first .content p span {
+  font: bold 22px 'Arial';
+  color: #1c3f95;
+}
+
+.container .first .content .slider {
+  overflow: hidden;
+  position: absolute;
+  width: 625px;
+  height: 500px;
+  margin: 0 auto;
+  right: 78px;
+  top: 78px;
+}
+
+.container .first .content .slider .slides {
+  position: relative;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.container .first .content .slider .slides .slide {
+  float: left;
+  display: block;
+}
+
+.container .first .content .slider .slides .slide img {
+  width: 625px;
+}
+
+.container .first .content .slider .navigation {
+  position: absolute;
+  width: 100%;
+  bottom: 55px;
+  left: 0;
+  z-index: 1;
+  cursor: pointer;
+  margin-left: 235px;
+}
+
+.container .first .content .slider .navigation .dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: none;
+  cursor: pointer;
+  border-radius: 16px;
+  margin: 0 16px;
+  border: 2px solid #fff;
+}
+
+.container .first .content .slider .navigation .active {
+  background: #fff;
+}
+/*# sourceMappingURL=style.css.map */

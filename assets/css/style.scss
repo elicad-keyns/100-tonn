@@ -1,0 +1,84 @@
+.container {
+  width: 1250px;
+  margin: 0 auto;
+  // border: 1px solid black;
+
+  iframe {
+    border: 2px solid #1c3f95;
+  }
+
+  .first {
+    .content {
+      background: url(../img/first-bg-block.jpg) no-repeat;
+      background-position-x: right;
+      position: absolute;
+      width: 1270px;
+      height: 548px;
+
+      p {
+        width: 470px;
+        font: normal 22px 'Arial';
+        color: #4d4d4f;
+        position: relative;
+        margin-top: 50px;
+
+        span {
+          font: bold 22px 'Arial';
+          color: #1c3f95;
+        }
+      }
+
+        .slider {
+          overflow: hidden;
+          position: absolute;
+          width: 625px;
+          height: 500px;
+          margin: 0 auto;
+          right: 78px;
+          top: 78px;
+
+          .slides {
+            position: relative;
+            transition: 1s;
+
+            .slide {
+              float: left;
+              display: block;
+
+              img {
+                width: 625px;
+                // height: 500px;
+              }
+            }
+          }
+
+          .navigation {
+            position: absolute;
+            width: 100%;
+            bottom: 55px;
+            left: 0;
+            z-index: 1;
+            cursor: pointer;
+            margin-left: 235px;
+
+            .dot {
+              display: inline-block;
+              width: 15px;
+              height: 15px;
+              background: none;
+              cursor: pointer;
+              border-radius: 16px;
+              margin: 0 16px;
+              border: 2px solid #fff;
+            }
+
+            .active {
+              background: #fff;
+            }
+          }
+        }
+    }
+
+
+  }
+}
