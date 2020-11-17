@@ -1,2 +1,2 @@
-# 100-tonn
-Second test task for HTDev
+# Сергей Москвичёв
+Second test task for HTDev "100 TONN"
