@@ -1,11 +1,11 @@
-$(document).ready(function() { // Ждём загрузки страницы
+$(document).ready(function() {
 
-	var slides = $(".slider .slides").children(".slide"); // Получаем массив всех слайдов
-	var width = $(".slider .slides").width(); // Получаем ширину видимой области
-	var i = slides.length; // Получаем количество слайдов
-	var offset = i * width; // Задаем начальное смещение и ширину всех слайдов
+	var slides = $(".slider .slides").children(".slide");
+	var width = $(".slider .slides").width();
+	var i = slides.length;
+	var offset = i * width;
 
-	$(".slider .slides").css('width',offset); // Задаем блоку со слайдами ширину всех слайдов
+	$(".slider .slides").css('width',offset);
 
 	for (j=0; j < slides.length; j++) {
 		if (j==0) {
@@ -17,14 +17,14 @@ $(document).ready(function() { // Ждём загрузки страницы
 	}
 
 	var dots = $(".slider .navigation").children(".dot");
-	offset = 0; // Обнуляем смещение, так как показывается начала 1 слайд
-  i = 0; // Обнуляем номер текущего слайда
+	offset = 0;
+  i = 0;
 
 	$('.slider .navigation .dot').click(function(){
 		$(".slider .navigation .active").removeClass("active");
 		$(this).addClass("active");
 		i = $(this).index();
 		offset = i * width;
-		$(".slider .slides").css("transform","translate3d(-"+offset+"px, 0px, 0px)"); // Смещаем блок со слайдами к следующему
+		$(".slider .slides").css("transform","translate3d(-"+offset+"px, 0px, 0px)");
 	});
 });
